@@ -1,0 +1,153 @@
+/*轮播图*/
+.right .body .banner {
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    /*width: 883px;*/
+    margin: 0 auto;
+    width: 100%;
+}
+
+.right .body .banner img {
+    /*width: 883px;*/
+    /*height: 410px;*/
+    width: 100%;
+    height: 100%;
+}
+
+.right .body .banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 65px;
+    z-index: 3;
+}
+
+.right .body .banner .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    text-indent: -999em;
+    border: 2px solid #3aa26f;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.right .body .banner .dots li:hover {
+    border: 2px solid #3bd992;
+}
+
+.right .body .banner .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+.right .body .banner .arrow {
+    position: absolute;
+    width: 20px;
+    height: 37px;
+    top: 50%;
+    margin-top: -18px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.right .body .banner #al {
+    left: 15px
+}
+
+.right .body .banner #ar {
+    right: 15px
+}
+
+.right .body .banner ul {
+    z-index: 1;
+    width: 600%;
+    overflow: hidden;
+}
+
+.right .body .banner ul .slider-item {
+    width: 883px;
+    height: 424px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.right .body .banner ul .slider-item .slider-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    /*width: 853px;*/
+    width: 100%;
+    height: 56px;
+    padding: 8px 15px;
+    text-align: left;
+    line-height: 28px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(top, transparent, rgb(0, 0, 0));
+}
+
+.right .body .banner .progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    min-height: 2px;
+    overflow: hidden;
+    z-index: 2;
+    background: #008c8c;
+}
+
+.right .body .show {
+    background-color: #f7f7f7;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.right .body .show .title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: 1px;
+    margin-left: 25px;
+}
+
+.right .body .show ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right .body .show li {
+    margin: 7px 0 12px 25px;
+    width: 260px;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.right .body .show li:hover {
+    -ms-transform: translate3d(0, -4px, 0);
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+}
+
+.right .body .show li:hover img {
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.12);
+}
+
+.right .body .show li img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}

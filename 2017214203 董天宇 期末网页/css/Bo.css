@@ -1,0 +1,20 @@
+.right .body {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.right .body img {
+    margin: 30px auto;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+
+.right .body .words {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: 1px;
+    margin-top: 10px;
+    padding-bottom: 59px;
+}
